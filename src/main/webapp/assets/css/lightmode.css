@@ -1,0 +1,216 @@
+/* Light/Dark Mode Styles for Marry Mate */
+/* Usage: add/remove .light-mode on <body> element via JS toggle */
+
+/*============================
+  DEFAULT (DARK/NAVY) THEME
+==============================*/
+/* (Assume your existing main.css and auth.css styles as the default) */
+
+/*====================
+  LIGHT MODE OVERRIDES
+======================*/
+
+body.light-mode {
+  background: #f5f6fa !important;
+  color: #222 !important;
+}
+
+/* Main containers */
+body.light-mode .login-container,
+body.light-mode .register-container {
+  background: #fff !important;
+  color: #1e293b !important;
+  box-shadow: 0 4px 24px rgba(30,58,138,0.04);
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
+  color: #1e293b !important;
+}
+
+body.light-mode .subtitle,
+body.light-mode .text-light,
+body.light-mode .form-label,
+body.light-mode .form-check-label,
+body.light-mode .summary-label,
+body.light-mode .social-text,
+body.light-mode .register-link,
+body.light-mode .login-link {
+  color: #727e96 !important;
+}
+
+body.light-mode .bg-overlay {
+  background: linear-gradient(135deg, rgba(251,191,36,0.09), rgba(255,255,255,0.79));
+  backdrop-filter: blur(1.5px);
+}
+
+/* Inputs */
+body.light-mode .form-control,
+body.light-mode select.form-control {
+  background: #f7f9fc !important;
+  color: #1e293b !important;
+  border-color: #dbeafe !important;
+}
+
+body.light-mode .form-control:focus,
+body.light-mode select.form-control:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.1);
+  background: #fff !important;
+}
+
+/* Floating Labels */
+body.light-mode .floating-label {
+  color: #727e96 !important;
+  background: #f7f9fc !important;
+}
+
+body.light-mode .form-control:focus ~ .floating-label,
+body.light-mode .form-control:not(:placeholder-shown) ~ .floating-label,
+body.light-mode select.form-control:valid ~ .floating-label {
+  color: #2563eb !important;
+  background: #fff !important;
+}
+
+/* Inputs error */
+body.light-mode .input-group.error .form-control {
+  border-color: #fca5a5 !important;
+  background: #fef2f2 !important;
+}
+
+/* Buttons */
+body.light-mode .btn-login,
+body.light-mode .btn-navy {
+  background: linear-gradient(135deg, #fbbf24, #fde68a) !important;
+  color: #1e293b !important;
+  border: none !important;
+}
+
+body.light-mode .btn-login:hover,
+body.light-mode .btn-navy:hover {
+  background: #fde68a !important;
+  color: #1e293b !important;
+  box-shadow: 0 6px 18px rgba(251,191,36,0.11);
+}
+
+body.light-mode .btn-outline-navy {
+  border: 2px solid #fbbf24 !important;
+  color: #fbbf24 !important;
+  background: transparent !important;
+}
+body.light-mode .btn-outline-navy:hover {
+  background: #fbbf24 !important;
+  color: #fff !important;
+}
+
+/* Social buttons */
+body.light-mode .btn-social {
+  box-shadow: 0 2px 10px rgba(251,191,36,0.08);
+}
+
+/* Alerts */
+body.light-mode .alert-success {
+  background: #e8faf1 !important;
+  color: #155724 !important;
+}
+body.light-mode .alert-danger {
+  background: #fff0f0 !important;
+  color: #b91c1c !important;
+}
+body.light-mode .alert-warning {
+  background: #fff9e6 !important;
+  color: #b45309 !important;
+}
+body.light-mode .alert-info {
+  background: #e0f2fe !important;
+  color: #0c4a6e !important;
+}
+
+/* Stepper */
+body.light-mode .step-number {
+  background: #fbbf24 !important;
+  color: #fff !important;
+}
+body.light-mode .step.active .step-number {
+  background: #3b82f6 !important;
+  color: #fff !important;
+}
+body.light-mode .step-label {
+  color: #3b82f6 !important;
+}
+body.light-mode .step-indicators {
+  background: #fff !important;
+}
+
+/* Card/Modal/Overlay */
+body.light-mode .terms-modal-content,
+body.light-mode .summary-container {
+  background: #fff !important;
+  color: #1e293b !important;
+}
+
+body.light-mode .terms-modal-header {
+  background: #e0e7ef !important;
+  color: #1e293b !important;
+}
+body.light-mode .terms-modal-footer {
+  background: #f7f9fc !important;
+}
+
+body.light-mode .terms-modal-close {
+  color: #1e293b !important;
+}
+body.light-mode .terms-modal-close:hover {
+  background: #fbbf2433 !important;
+}
+
+/* Misc */
+body.light-mode .input-icon,
+body.light-mode .password-toggle {
+  color: #fbbf24 !important;
+}
+body.light-mode .input-group.error .error-message {
+  color: #b91c1c !important;
+  background: #fff0f0 !important;
+}
+
+/* Divider */
+body.light-mode .divider,
+body.light-mode .divider span {
+  color: #b6bcc8 !important;
+  border-color: #e5e7eb !important;
+}
+
+/* Navbar, if present */
+body.light-mode .navbar,
+body.light-mode .navbar-collapse {
+  background: #fff !important;
+  color: #1e293b !important;
+}
+body.light-mode .navbar-brand,
+body.light-mode .brand-text {
+  color: #fbbf24 !important;
+}
+
+/* Links */
+body.light-mode a {
+  color: #fbbf24 !important;
+}
+body.light-mode a:hover {
+  color: #3b82f6 !important;
+}
+
+/* Custom Scrollbar */
+body.light-mode ::-webkit-scrollbar-thumb {
+  background: #fbbf24 !important;
+}
+
+/* Selection */
+body.light-mode ::selection {
+  background: #fde68a !important;
+  color: #1e293b !important;
+}
